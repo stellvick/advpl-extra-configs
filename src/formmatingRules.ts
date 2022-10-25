@@ -148,7 +148,7 @@ export class FormattingRules {
   }
 
   public getRules(): Rule[] {
-    return [...this.getStructures(), ...this.getCustomStructures()];
+    return [...this.getStructures(), ...this.getCustomStructures(), ...this.getUserStructures()];
   }
 
   public getLastOpenMatch(rule: RuleMatch): RuleMatch {
@@ -167,6 +167,10 @@ export class FormattingRules {
   }
 
   private getCustomStructures(): Rule[] {
+    return [];
+  }
+
+  private getUserStructures(): Rule[] {
     return [];
   }
 

@@ -41,6 +41,9 @@ let listaURI: Uri[] = [];
 let comentFontPad: string[] = workspace
   .getConfiguration("advpl-sintaxe")
   .get("comentFontPad") as string[];
+let userRegRules: string[] = workspace
+  .getConfiguration("advpl-sintaxe")
+  .get("userRegRules") as string[];
 if (!comentFontPad) {
   comentFontPad = [""];
   window.showInformationMessage(

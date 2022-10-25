@@ -68,5 +68,30 @@
       "Return"
     ],
     "description": "Cria User Function sem retorno e sem cabecalho preenchido"
+  },
+  "Create UF ClipF":{
+    "prefix": "UserClip",
+    "body": [
+      "//-----------------------------------------------------------------------------",
+      "/*/{Protheus.doc} ${1:Name Prefix} ${2:Function Name}",
+      "${3:Descrica rapida}",
+      "",
+      "@author\t${5:Author}",
+      "@since\t\t$CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      "@version\tP.12",
+      "@obs",  		
+      "Projeto",
+      "",
+      "Alteracoes Realizadas desde a Estruturacao Inicial" ,
+      "Data       Programador     Motivo" ,
+      "/*/",
+      "//-----------------------------------------------------------------------------",
+      "User Function ${2:Function Name}(${4:Args})",
+      "",
+      "\t${CLIPBOARD}",
+      "",
+      "Return"
+    ],
+    "description": "Cria User Function com retorno conteudo do clipboard"
   }
 }
