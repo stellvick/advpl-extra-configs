@@ -44,5 +44,29 @@
       "\t\tORDER BY ${orderBy}",
       "\tEndSql"
     ]
+  },
+  "Create UF":{
+    "prefix": "UserFunction",
+    "body": [
+      "//-----------------------------------------------------------------------------",
+      "/*/{Protheus.doc} ${1:Name Prefix} ${2:Function Name}",
+      "${3:Descrica rapida}",
+      "",
+      "@author\t${4:Author}",
+      "@since\t\t$CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR",
+      "@version\tP.12",
+      "@obs",  		
+      "Projeto",
+      "",
+      "Alteracoes Realizadas desde a Estruturacao Inicial" ,
+      "Data       Programador     Motivo" ,
+      "/*/",
+      "//-----------------------------------------------------------------------------",
+      "User Function ${2:Function Name}(${4:Args})",
+      "\t${5:}",
+      "",
+      "Return"
+    ],
+    "description": "Cria User Function sem retorno e sem cabecalho preenchido"
   }
 }
